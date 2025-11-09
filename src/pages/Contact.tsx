@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <section>
+    <section style={{ display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }}>
       <h2>Contact Page</h2>
       <p>You can reach us at <a href="  contact@example.com">contact@example.com</a></p>
     </section>

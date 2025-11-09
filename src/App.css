@@ -1,0 +1,60 @@
+/* AppRouter.css */
+
+/* Base nav styles */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem 2rem;
+  background-color: #0f172a; /* deep navy background */
+  border-bottom: 2px solid #1e293b;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Base link styles */
+nav a {
+  font-family: var(--primary-font);
+  text-decoration: none;
+  color: #e2e8f0; /* light gray */
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  transition: all 0.2s ease-in;
+}
+
+/* Hover effect */
+nav a:hover {
+  color: #38bdf8; /* cyan */
+  background-color: rgba(56, 189, 248, 0.1);
+}
+
+/* Active link styling */
+nav a.active {
+  color: #0ea5e9; /* bright blue for active link */
+  background-color: rgba(14, 165, 233, 0.15);
+  font-weight: 600;
+}
+
+/* Focus state (keyboard accessibility) */
+nav a:focus {
+  outline: 2px solid #38bdf8;
+  outline-offset: 3px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  nav {
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0.75rem;
+  }
+
+  nav a {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.6rem;
+  }
+}
